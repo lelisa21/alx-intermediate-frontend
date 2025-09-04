@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mastering Tailwind Grid & Flex</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="p-4 bg-gray-50">
+
+  <nav class="flex items-center justify-between bg-blue-600 text-white p-4">
+    <div class="font-bold text-xl">Laloo</div>
+    <ul class="hidden md:flex space-x-6">
+      <li><a href="#" class="hover:text-gray-300">Home</a></li>
+      <li><a href="#services" class="hover:text-gray-300">Services</a></li>
+      <li><a href="#gallery" class="hover:text-gray-300">Gallery</a></li>
+      <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- main -->
+  <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 min-h-screen">
+    <section class="lg:col-span-2 flex">
+      <div class="bg-red-200 p-4 w-1/2">Flexbox Item 1</div>
+      <div class="bg-red-400 p-4 w-1/2">Flexbox Item 2</div>
+    </section>
+    <aside class="bg-green-200 p-4">Sidebar</aside>
+  </main>
+<!--  I added this part from my before projects  -->
+  <section id="services" class="py-8 mt-8">
+    <h2 class="text-3xl font-bold text-center text-blue-800 mb-2">Our Services</h2>
+    <p class="text-gray-600 text-center mb-8">We provide comprehensive web development training and services</p>
+    
+    <div class="mb-12">
+      <h3 class="text-2xl font-semibold text-blue-700 mb-6 text-center">Teaching & Learning</h3>
+      <div class="flex flex-col md:flex-row gap-6">
+        <div class="flex-1 bg-blue-50 p-6 rounded-lg shadow-sm transition-all duration-300 hover:translate-y-[-5px] hover:shadow-md">
+          <h4 class="font-bold text-lg mb-2 text-center">Frontend Development</h4>
+          <p class="text-gray-600 text-center">Master HTML, CSS, JavaScript and modern frameworks like React and Vue.js</p>
+        </div>
+        
+        <div class="flex-1 bg-green-50 p-6 rounded-lg shadow-sm transition-all duration-300 hover:translate-y-[-5px] hover:shadow-md">
+          <h4 class="font-bold text-lg mb-2 text-center">Backend Development</h4>
+          <p class="text-gray-600 text-center">Learn server-side programming with Node.js, Python, databases, and API design</p>
+        </div>
+        
+        <div class="flex-1 bg-purple-50 p-6 rounded-lg shadow-sm transition-all duration-300 hover:translate-y-[-5px] hover:shadow-md">
+          <h4 class="font-bold text-lg mb-2 text-center">Software Engineering</h4>
+          <p class="text-gray-600 text-center">Full-stack development, system architecture, and software design principles</p>
+        </div>
+      </div>
+    </div>
+ 
+    <div>
+      <h3 class="text-2xl font-semibold text-blue-700 mb-6 text-center">Coding Services</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-yellow-50 p-6 rounded-lg shadow-sm text-center transition-all duration-300 hover:translate-y-[-5px] hover:shadow-md">
+          <h4 class="font-bold text-lg mb-2">Web Development</h4>
+          <p class="text-gray-600">Custom websites and web applications tailored to your needs</p>
+        </div>
+        
+        <div class="bg-red-50 p-6 rounded-lg shadow-sm text-center transition-all duration-300 hover:translate-y-[-5px] hover:shadow-md">
+          <h4 class="font-bold text-lg mb-2">UI/UX Design</h4>
+          <p class="text-gray-600">Beautiful and intuitive user interfaces with exceptional user experience</p>
+        </div>
+        
+        <div class="bg-indigo-50 p-6 rounded-lg shadow-sm text-center transition-all duration-300 hover:translate-y-[-5px] hover:shadow-md">
+          <h4 class="font-bold text-lg mb-2">Mobile Apps</h4>
+          <p class="text-gray-600">Cross-platform mobile applications for iOS and Android</p>
+        </div>
+        
+        <div class="bg-teal-50 p-6 rounded-lg shadow-sm text-center transition-all duration-300 hover:translate-y-[-5px] hover:shadow-md">
+          <h4 class="font-bold text-lg mb-2">Performance Optimization</h4>
+          <p class="text-gray-600">Speed up your website and improve overall performance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Gallery -->
+  <section id="gallery" class="mt-8">
+    <h2 class="text-2xl font-bold mb-4">Responsive Image Gallery</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <img src="assets/im1.jpg" class="w-full relative h-64 rounded shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="assets/im2.jpg" class="w-full relative h-64 rounded shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="assets/im3.jpg" class="w-full relative h-64 rounded shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="assets/im4.jpg" class="w-full relative h-64 rounded shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="assets/im5.png" class="w-full relative h-64 rounded shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="assets/im6.jpg" class="w-full relative h-64 rounded shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="assets/im7.png" class="w-full relative h-64 rounded shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="assets/im8.png" class="w-full relative h-64 rounded shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="assets/im9.png" class="w-full relative h-64 rounded shadow hover:scale-105 hover:shadow-lg transition">
+      <img src="assets/im10.png" class="w-full relative h-64 rounded shadow hover:scale-105 hover:shadow-lg transition">
+    </div>
+  </section> 
+
+  <!-- Footer  -->
+  <footer id="contact" class="bg-gray-800 text-white p-8 mt-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <h3 class="font-bold mb-2">About Us</h3>
+        <p class="text-sm">We provide comprehensive web development training and services to help you succeed in the digital world.</p>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Quick Links</h3>
+        <ul class="text-sm space-y-1">
+          <li><a href="#" class="hover:text-gray-300">Home</a></li>
+          <li><a href="#services" class="hover:text-gray-300">Services</a></li>
+          <li><a href="#gallery" class="hover:text-gray-300">Gallery</a></li>
+          <li><a href="#contact" class="hover:text-gray-300">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-bold mb-2">Contact</h3>
+        <p class="text-sm">Email: laloo@gmail.com</p>
+        <p class="text-sm">Phone: +123 456 7890</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
