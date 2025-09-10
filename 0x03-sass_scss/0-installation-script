@@ -1,0 +1,8 @@
+SASS Installation Steps on Windows:
+1. Installed Node.js from the official website (nodejs.org):
+2. Opened Command Prompt as administrator:
+3. Ran the command: npm install -g sass
+4. Verified installation with: sass --version
+5. SASS version installed:
+my out put:
+1.92.1 compiled with dart2js 3.9.2:
