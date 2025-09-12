@@ -1,4 +1,3 @@
-
 # TypeScript Learning Project
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.3+-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
